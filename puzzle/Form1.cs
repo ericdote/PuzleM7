@@ -97,8 +97,8 @@ namespace puzzle
                 {
                     foreach (var j in pb) 
                     {
-                        if(((j.Location.X / 100) == pointImg1.Y) && (j.Location.Y /100) == pointImg1.X)
-                        { //Comprovamos la posicion donde vamos a cambiar
+                        if(((j.Location.X / 100) == pointImg1.Y) && (j.Location.Y /100) == pointImg1.X)//Comprovamos la posicion donde vamos a cambiar
+                        { 
                             aux = j.Image; //Cogemos la imagen secundaria y la ponemos en el auxiliar
                             j.Image = i.Image; //Cambiamos la secundaria por la que estamos arrastrando
                             i.Image = aux; //Cambiamos la posicion de donde hemos arrastrado la imagen arrastrada por la imagen que habia donde esta la nueva (osea que ponemos la auxiliar aqui)
